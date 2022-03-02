@@ -1,0 +1,12 @@
+C:\Users\Darian\Desktop\repository\Capa_presentacion\Capa_presentacion\bin\Debug\Capa_presentacion.exe.config
+C:\Users\Darian\Desktop\repository\Capa_presentacion\Capa_presentacion\bin\Debug\Capa_presentacion.exe
+C:\Users\Darian\Desktop\repository\Capa_presentacion\Capa_presentacion\bin\Debug\Capa_presentacion.pdb
+C:\Users\Darian\Desktop\repository\Capa_presentacion\Capa_presentacion\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Darian\Desktop\repository\Capa_presentacion\Capa_presentacion\obj\Debug\Capa_presentacion.csproj.AssemblyReference.cache
+C:\Users\Darian\Desktop\repository\Capa_presentacion\Capa_presentacion\obj\Debug\Capa_presentacion.Main_menu.resources
+C:\Users\Darian\Desktop\repository\Capa_presentacion\Capa_presentacion\obj\Debug\Capa_presentacion.Properties.Resources.resources
+C:\Users\Darian\Desktop\repository\Capa_presentacion\Capa_presentacion\obj\Debug\Capa_presentacion.csproj.GenerateResource.cache
+C:\Users\Darian\Desktop\repository\Capa_presentacion\Capa_presentacion\obj\Debug\Capa_presentacion.csproj.CoreCompileInputs.cache
+C:\Users\Darian\Desktop\repository\Capa_presentacion\Capa_presentacion\obj\Debug\Capa_presentacion.csproj.CopyComplete
+C:\Users\Darian\Desktop\repository\Capa_presentacion\Capa_presentacion\obj\Debug\Capa_presentacion.exe
+C:\Users\Darian\Desktop\repository\Capa_presentacion\Capa_presentacion\obj\Debug\Capa_presentacion.pdb
