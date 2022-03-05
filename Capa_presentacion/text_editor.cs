@@ -41,7 +41,6 @@ namespace Capa_presentacion
             if(MessageBox.Show("Seguro que quieres cerrar?","Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)==DialogResult.Yes)
             {
                 Main_menu.Instance.Close();
-                //Environment.Exit(0);
             }
         }
 
@@ -54,8 +53,6 @@ namespace Capa_presentacion
         {
             this.Close();
 
-            //Main_menu main =  new Main_menu();
-            //main.Show();
         }
 
         private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -67,10 +64,7 @@ namespace Capa_presentacion
         private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (openFileDialog.ShowDialog() == DialogResult.OK)
-                //txt_field.LoadFile(Path.GetFullPath(openFileDialog.FileName.ToString()).ToString());
-
-                txt_field.LoadFile(openFileDialog.SafeFileName);
-                //txt_field.Text += "\n\n" + Path.GetFullPath(openFileDialog.SafeFileName.ToString()).ToString();
+                txt_field.LoadFile(openFileDialog.FileName);
         }
 
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
