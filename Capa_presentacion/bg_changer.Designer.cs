@@ -88,7 +88,6 @@ namespace Capa_presentacion
             this.main_lay.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 105F));
             this.main_lay.Size = new System.Drawing.Size(491, 401);
             this.main_lay.TabIndex = 2;
-            this.main_lay.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // btn_opc_panel
             // 

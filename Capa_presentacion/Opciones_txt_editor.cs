@@ -25,6 +25,9 @@ namespace Capa_presentacion
             {
                 combo_heigt.Items.Add(Convert.ToString(i));
             }
+            normal.Checked = true;
+            combo_heigt.SelectedIndex = 11;
+            combo_fuente.SelectedIndex = 0;
         }
 
         private void btn_close_Click(object sender, EventArgs e)
@@ -53,7 +56,7 @@ namespace Capa_presentacion
             {
                 fuente = new Font(combo_fuente.Text, Int32.Parse(combo_heigt.Text), FontStyle.Underline);
             }
-            text_editor.Instance.Font = fuente;
+            text_editor.Instance.txt_field.Font = fuente;
             text_editor.Instance.Size = new Size(550,450);
 
 
@@ -62,7 +65,7 @@ namespace Capa_presentacion
         private void button1_Click(object sender, EventArgs e)
         {
             if (colorDialog1.ShowDialog() == DialogResult.OK)
-                color = colorDialog1.Color;
+                text_editor.Instance.txt_field.ForeColor = colorDialog1.Color;
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -22,7 +22,7 @@ namespace Capa_presentacion
             openFileDialog.Title = "Seleccione un archivo";
             saveFileDialog.Title = "Nuevo documnto";
             //txt_field.SelectionFont = new Font("Tahoma", 30, FontStyle.Regular);
-            //txt_field.SelectionColor = new Color();
+            txt_field.SelectionColor = new Color();
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -55,7 +55,7 @@ namespace Capa_presentacion
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
 
         }
 
@@ -123,7 +123,7 @@ namespace Capa_presentacion
         {
             txt_field.SelectionColor = Opciones_txt_editor.Instance.color;
         }
-
+        
         private void text_editor_MouseMove(object sender, MouseEventArgs e)
         {
             txt_field.SelectionColor = Opciones_txt_editor.Instance.color;
