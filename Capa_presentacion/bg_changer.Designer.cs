@@ -74,7 +74,7 @@ namespace Capa_presentacion
             // 
             // main_lay
             // 
-            this.main_lay.BackColor = System.Drawing.SystemColors.Control;
+            this.main_lay.BackColor = System.Drawing.Color.Transparent;
             this.main_lay.ColumnCount = 1;
             this.main_lay.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.main_lay.Controls.Add(this.btn_opc_panel, 0, 0);

@@ -24,3 +24,4 @@ C:\Users\Darian\Documents\GitHub\presentation-layer\Capa_presentacion\obj\Debug\
 C:\Users\Darian\Documents\GitHub\presentation-layer\Capa_presentacion\obj\Debug\Capa_presentacion.exe
 C:\Users\Darian\Documents\GitHub\presentation-layer\Capa_presentacion\obj\Debug\Capa_presentacion.pdb
 C:\Users\Darian\Documents\GitHub\presentation-layer\Capa_presentacion\obj\Debug\Capa_presentacion.bg_changer.resources
+C:\Users\Darian\Documents\GitHub\presentation-layer\Capa_presentacion\obj\Debug\Capa_presentacion.Opciones_txt_editor.resources

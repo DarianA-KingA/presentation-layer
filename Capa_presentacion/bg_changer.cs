@@ -50,7 +50,7 @@ namespace Capa_presentacion
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             if (colorDialog1.ShowDialog() == DialogResult.OK)
-                main_lay.BackColor = colorDialog1.Color;
+                this.BackColor = colorDialog1.Color;
 
         }
 

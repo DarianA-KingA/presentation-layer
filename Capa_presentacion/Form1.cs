@@ -27,8 +27,7 @@ namespace Capa_presentacion
         private void bunifuImageButton2_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            text_editor text = new text_editor();
-            text.Show();
+            text_editor.Instance.Show();
         }
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)

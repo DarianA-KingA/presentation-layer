@@ -13,7 +13,7 @@ namespace Capa_presentacion
         /// </summary>
         [STAThread]
         static void Main()
-        {
+      {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(Main_menu.Instance);

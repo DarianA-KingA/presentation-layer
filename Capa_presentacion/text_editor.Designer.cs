@@ -54,6 +54,10 @@ namespace Capa_presentacion
             this.txt_field = new System.Windows.Forms.RichTextBox();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.gaurdarCómoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.label1 = new System.Windows.Forms.Label();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.master_panel.SuspendLayout();
             this.btn_opc_panel.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -85,15 +89,18 @@ namespace Capa_presentacion
             this.master_panel.Size = new System.Drawing.Size(550, 450);
             this.master_panel.TabIndex = 0;
             this.master_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.master_panel_Paint);
+            this.master_panel.MouseHover += new System.EventHandler(this.master_panel_MouseHover);
             // 
             // btn_opc_panel
             // 
             this.btn_opc_panel.BackColor = System.Drawing.Color.Gray;
-            this.btn_opc_panel.ColumnCount = 2;
-            this.btn_opc_panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.96323F));
-            this.btn_opc_panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.03676F));
+            this.btn_opc_panel.ColumnCount = 3;
+            this.btn_opc_panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.59559F));
+            this.btn_opc_panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.25735F));
+            this.btn_opc_panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.96324F));
             this.btn_opc_panel.Controls.Add(this.menuStrip1, 0, 0);
-            this.btn_opc_panel.Controls.Add(this.tbl_botones, 1, 0);
+            this.btn_opc_panel.Controls.Add(this.tbl_botones, 2, 0);
+            this.btn_opc_panel.Controls.Add(this.label1, 1, 0);
             this.btn_opc_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_opc_panel.Location = new System.Drawing.Point(3, 3);
             this.btn_opc_panel.Name = "btn_opc_panel";
@@ -123,10 +130,12 @@ namespace Capa_presentacion
             this.abrirToolStripMenuItem,
             this.toolStripSeparator3,
             this.guardarToolStripMenuItem,
+            this.toolStripSeparator6,
+            this.gaurdarCómoToolStripMenuItem,
             this.toolStripSeparator1,
-            this.salirToolStripMenuItem,
-            this.toolStripSeparator5,
             this.ajustesToolStripMenuItem,
+            this.toolStripSeparator5,
+            this.salirToolStripMenuItem,
             this.toolStripSeparator2,
             this.ayudaToolStripMenuItem});
             this.op_menu.Font = new System.Drawing.Font("Simplified Arabic Fixed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -138,7 +147,7 @@ namespace Capa_presentacion
             // 
             this.nuevoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("nuevoToolStripMenuItem.Image")));
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(230, 28);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
             this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 
@@ -190,8 +199,9 @@ namespace Capa_presentacion
             // 
             this.ajustesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ajustesToolStripMenuItem.Image")));
             this.ajustesToolStripMenuItem.Name = "ajustesToolStripMenuItem";
-            this.ajustesToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.ajustesToolStripMenuItem.Size = new System.Drawing.Size(230, 28);
             this.ajustesToolStripMenuItem.Text = "Ajustes";
+            this.ajustesToolStripMenuItem.Click += new System.EventHandler(this.ajustesToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -202,8 +212,9 @@ namespace Capa_presentacion
             // 
             this.ayudaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ayudaToolStripMenuItem.Image")));
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(230, 28);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
+            this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
             // 
             // tbl_botones
             // 
@@ -278,11 +289,35 @@ namespace Capa_presentacion
             // openFileDialog
             // 
             this.openFileDialog.FileName = "openFileDialog";
-            this.openFileDialog.Filter = "txt_file|*.txt";
+            this.openFileDialog.Filter = "txt_file|*.rtf";
             // 
             // saveFileDialog
             // 
-            this.saveFileDialog.Filter = "text_file|*.txt";
+            this.saveFileDialog.Filter = "text_file|*.rtf";
+            // 
+            // gaurdarCómoToolStripMenuItem
+            // 
+            this.gaurdarCómoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("gaurdarCómoToolStripMenuItem.Image")));
+            this.gaurdarCómoToolStripMenuItem.Name = "gaurdarCómoToolStripMenuItem";
+            this.gaurdarCómoToolStripMenuItem.Size = new System.Drawing.Size(230, 28);
+            this.gaurdarCómoToolStripMenuItem.Text = "Guardar como...";
+            this.gaurdarCómoToolStripMenuItem.Click += new System.EventHandler(this.gaurdarCómoToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(227, 6);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Madino", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(215, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(111, 39);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Editor de texto";
             // 
             // text_editor
             // 
@@ -295,6 +330,8 @@ namespace Capa_presentacion
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "text_editor";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.text_editor_FormClosing);
+            this.FontChanged += new System.EventHandler(this.text_editor_FontChanged);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.text_editor_MouseMove);
             this.master_panel.ResumeLayout(false);
             this.btn_opc_panel.ResumeLayout(false);
             this.btn_opc_panel.PerformLayout();
@@ -333,5 +370,9 @@ namespace Capa_presentacion
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajustesToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripMenuItem gaurdarCómoToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
