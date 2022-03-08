@@ -78,6 +78,7 @@ namespace Capa_presentacion
         private void button3_Click(object sender, EventArgs e)
         {
             cambios();
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
