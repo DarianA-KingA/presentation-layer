@@ -21,8 +21,8 @@ namespace Capa_presentacion
             this.WindowState = FormWindowState.Normal;
             openFileDialog.Title = "Seleccione un archivo";
             saveFileDialog.Title = "Nuevo documnto";
-            //txt_field.SelectionFont = new Font("Tahoma", 30, FontStyle.Regular);
-            txt_field.SelectionColor = new Color();
+            txt_field.Font = new Font("Courier", 28, FontStyle.Regular);
+            this.BackColor = btn_opc_panel.BackColor;
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -102,10 +102,6 @@ namespace Capa_presentacion
             txt_field.Clear();
         }
 
-        private void text_editor_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Main_menu.Instance.Show();
-        }
 
         private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -130,9 +126,28 @@ namespace Capa_presentacion
             txt_field.BackColor = master_panel.BackColor;
         }
 
-        private void master_panel_MouseHover(object sender, EventArgs e)
+        private void txt_field_BackColorChanged(object sender, EventArgs e)
         {
-            txt_field.SelectionFont = Opciones_txt_editor.Instance.fuente;
+            if (txt_field.BackColor == Color.Black)
+                txt_field.ForeColor = Color.White;
+            else
+                txt_field.ForeColor = Color.Black;
+        }
+
+        private void text_editor_VisibleChanged(object sender, EventArgs e)
+        {
+            Main_menu.Instance.Show();
+        }
+
+        private void text_editor_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.F5)
+                if (this.WindowState == FormWindowState.Maximized)
+                {
+                    this.WindowState = FormWindowState.Normal;
+                }
+                else
+                    this.WindowState = FormWindowState.Maximized;
         }
     }
 }

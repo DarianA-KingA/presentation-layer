@@ -20,7 +20,7 @@ namespace Capa_presentacion
             InitializeComponent();
             combo_fuente.Items.Add("Tahoma");
             combo_fuente.Items.Add("Madino");
-            combo_fuente.Items.Add("Madino");
+            combo_fuente.Items.Add("Times New Roman");
             for (int i=1; i<=30; i++)
             {
                 combo_heigt.Items.Add(Convert.ToString(i));
@@ -72,8 +72,7 @@ namespace Capa_presentacion
         {
             //bg color 
             if (colorDialog1.ShowDialog() == DialogResult.OK)
-
-                text_editor.Instance.BackColor = colorDialog1.Color;
+                text_editor.Instance.txt_field.BackColor = colorDialog1.Color;
         }
 
         private void button3_Click(object sender, EventArgs e)
