@@ -21,7 +21,7 @@ namespace Capa_presentacion
             this.WindowState = FormWindowState.Normal;
             openFileDialog.Title = "Seleccione un archivo";
             saveFileDialog.Title = "Nuevo documnto";
-            txt_field.Font = new Font("Courier", 28, FontStyle.Regular);
+            txt_field.Font = new Font("Courier", 14, FontStyle.Regular);
             this.BackColor = btn_opc_panel.BackColor;
         }
 
